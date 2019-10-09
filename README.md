@@ -11,7 +11,12 @@ or do it yourself: To run it in local docker
 
 ---
 
+#Try 1 Just react and redux only 
 
+- ```npx create-react-app sandbox```
+- ```npm install redux react-redux```
+- ```npm start```
+- follow video https://www.youtube.com/watch?v=CVpUuw9XSjY&list=PLDyQo7g0_nsVHmyZZpVJyFn5ojlboVEhE&index=5
 
 
 
