@@ -1,8 +1,8 @@
 const counterReducer = (state = 0, action) => {
     switch (action.type) {
-        case 'INCREMENT':
+        case 'COUNT_UP_ASYNC':
             return state + action.payload;
-        case 'DECREMENT':
+        case 'COUNT_DOWN_ASYNC':
             return state - action.payload;
         default:
             return state;
