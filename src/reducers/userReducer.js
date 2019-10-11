@@ -1,6 +1,6 @@
-const userReducer = (state = "", action) => {
-    if (action.type === 'GET_USERS_ASYNC') {
-        return state;
+const userReducer = (state = "", { type, data }) => {
+    if (type === 'RECIEVE_API_DATA') {
+        return data;
     } else {
         return state;
     }

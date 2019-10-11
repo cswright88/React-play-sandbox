@@ -22,3 +22,18 @@ export const AllUsers = () => {
         type: 'GET_USERS'
     };
 };
+
+//API REQUEST Actions
+export const REQUEST_API_DATA = "REQUEST_API_DATA";
+export const RECIEVE_API_DATA = "RECIEVE_API_DATA";
+export const requestApiData = () => {
+    return {
+        type: 'REQUEST_API_DATA'
+    };
+};
+export const recieveApiData = data => {
+    return {
+        type: 'RECIEVE_API_DATA',
+        data: data
+    };
+};

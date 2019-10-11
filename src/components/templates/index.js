@@ -1,11 +1,10 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {AllUsers, decrement, increment, login} from "../../actions";
+import { decrement, increment, login} from "../../actions";
 
 function Home() {
     const counter = useSelector(state => state.counter);
     const isLogged = useSelector(state => state.isLogged);
-    const allUsers = useSelector(state => state.users);
     const dispatch = useDispatch();
 
 
@@ -20,11 +19,7 @@ function Home() {
             <button onClick={() =>dispatch(login())}>signin</button>
             {!isLogged ? <h2>not logged in</h2> : <h2>logged in</h2>}
 
-                <h1>Users</h1>
-                <button onClick={() =>dispatch(AllUsers())}>
-                    Get Users Example API Call
-                </button>
-                <p>{allUsers}</p>
+
 
         </div>
     );

@@ -1,5 +1,7 @@
-import { takeLatest, put } from "redux-saga/effects";
+import { call, takeLatest, put } from "redux-saga/effects";
 import { delay } from 'redux-saga/effects';
+// import { recieveApiData } from "../actions";
+import fetchData from '../api';
 
 function* incrementAsync() {
     yield delay(2000);
@@ -12,7 +14,12 @@ function* decrementAsync() {
 }
 
 function* getUsers() {
-    yield put({type: 'GET_USERS_ASYNC'});
+    try {
+        const data = yield call(fetchData);
+        yield put({type: 'RECIEVE_API_DATA', data: data});
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 function* watchSagas(){

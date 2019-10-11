@@ -1,12 +1,13 @@
 import React from 'react';
 import routes from '../Routes';
 
-const listRoutes = routes.map((route) =>
-    <a href={route.path}><li>{route.pageTitle}</li></a>
-);
+
 
 function Nav() {
-    console.log(listRoutes);
+    const listRoutes = routes.map((route, i) =>
+        <li key={ i } ><a href={route.path}>{route.pageTitle}</a></li>
+    );
+
     return (
         <div>
             <h1>NavBar</h1>
