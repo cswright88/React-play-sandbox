@@ -2,6 +2,7 @@
 
 #remove lock file
 package-lock.json
+yarn.lock
 #iml files
 React-play-sandbox.iml
 # dependencies
