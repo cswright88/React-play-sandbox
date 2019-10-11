@@ -16,3 +16,9 @@ export const login = () => {
         type: 'SIGN_IN'
     };
 };
+
+export const AllUsers = () => {
+    return {
+        type: 'GET_USERS'
+    };
+};
