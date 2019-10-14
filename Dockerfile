@@ -14,6 +14,8 @@ RUN npm install react-scripts
 RUN npm install redux react-redux
 RUN npm install redux-saga
 RUN npm install react-router
+RUN npm install @material-ui/core
+RUN npm install @material-ui/icons
 
 # start app
 CMD ["npm", "start"]

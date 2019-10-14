@@ -4,6 +4,7 @@ import React from 'react';
 import Home from '../templates';
 import About from '../templates/AboutMe';
 import Users from '../templates/users';
+import Dashboard from "../templates/Dashboard";
 
 
 const routes = [
@@ -21,6 +22,13 @@ const routes = [
         key: 'about',
         exact: true,
         main: () => <About />,
+    },
+    {
+        pageTitle: 'Dashboard',
+        path: '/Dashboard',
+        key: 'Dashboard',
+        exact: true,
+        main: () => <Dashboard />,
     },
     {
         pageTitle: 'Users',

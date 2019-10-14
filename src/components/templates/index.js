@@ -1,6 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import { decrement, increment, login} from "../../actions";
+import Button from '@material-ui/core/Button';
 
 function Home() {
     const counter = useSelector(state => state.counter);
@@ -12,11 +13,11 @@ function Home() {
     return (
         <div className="App">
             <h1>home Page</h1>
-            <button onClick={() => dispatch(decrement(1))}>-</button>
-            <button onClick={() => dispatch(increment(1))}>+</button>
+            <Button variant="contained" color="primary" onClick={() => dispatch(decrement(1))}>-</Button>
+            <Button variant="contained" color="primary" onClick={() => dispatch(increment(1))}>+</Button>
             <h2>counter {counter}</h2>
 
-            <button onClick={() =>dispatch(login())}>signin</button>
+            <Button variant="contained" color="primary" onClick={() =>dispatch(login())}>signin</Button>
             {!isLogged ? <h2>not logged in</h2> : <h2>logged in</h2>}
 
 
