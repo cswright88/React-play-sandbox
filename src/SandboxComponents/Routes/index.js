@@ -1,10 +1,12 @@
 
 import React from 'react';
 
-import Home from '../templates';
+// import Home from '../templates';
 import About from '../templates/AboutMe';
 import Users from '../templates/users';
 import Dashboard from "../templates/Dashboard";
+import Orders from "../templates/Orders";
+import Home from "../templates";
 
 
 const routes = [
@@ -29,6 +31,13 @@ const routes = [
         key: 'Dashboard',
         exact: true,
         main: () => <Dashboard />,
+    },
+    {
+        pageTitle: 'Orders',
+        path: '/Orders',
+        key: 'Orders',
+        exact: true,
+        main: () => <Orders />,
     },
     {
         pageTitle: 'Users',

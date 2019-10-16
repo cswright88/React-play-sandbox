@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import * as ControlRoutes from './components/Routes';
+import * as ControlRoutes from './Routes';
 
 const getRoutes = (routes) => (routes.map((route) => (
     <div key={`routes-${route.path}-parent`}>
