@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import { decrement, increment, login} from "../../actions";
 import Button from '@material-ui/core/Button';
 
-function Home() {
+function OldHome() {
     const counter = useSelector(state => state.counter);
     const isLogged = useSelector(state => state.isLogged);
     const dispatch = useDispatch();
@@ -26,4 +26,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default OldHome;

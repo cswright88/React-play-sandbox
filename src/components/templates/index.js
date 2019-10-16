@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Chart from "../../SandboxComponents/templates/Chart";
@@ -10,16 +9,12 @@ import useStyles from "../CSS/useStyles";
 import clsx from "clsx";
 
 function Home() {
-    const preventDefault = event => event.preventDefault();
     const classes = useStyles();
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
     return (
        <div>
            <h1>index home</h1>
-           <Link href="/campaigns" onClick={preventDefault} className='fuck'>
-               Link
-           </Link>
 
            <Container maxWidth="lg" className={classes.container}>
                <Grid container spacing={3}>
