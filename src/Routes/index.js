@@ -1,5 +1,7 @@
 
-import React from 'react';import Home from "../components/templates";
+import React from 'react';
+import Home from "../components/templates";
+import Campaigns from "../components/templates/campaigns";
 
 
 const routes = [
@@ -10,6 +12,14 @@ const routes = [
         icon: null,
         exact: true,
         main: () => <Home />,
+    },
+    {
+        pageTitle: 'Campaigns',
+        path: '/campaigns',
+        key: 'campaigns',
+        icon: null,
+        exact: true,
+        main: () => <Campaigns />,
     },
 ];
 

@@ -13,8 +13,7 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import {mainListItems, secondaryListItems} from './listItems';
-// import useStyles from "../CSS/useStyles";
+import {mainListItems} from './listItems';
 
 
 const drawerWidth = 240;
@@ -153,8 +152,6 @@ export default function NavBar() {
                 </div>
                 <Divider/>
                 <List>{mainListItems}</List>
-                <Divider/>
-                <List>{secondaryListItems}</List>
             </Drawer>
         </div>
     );
