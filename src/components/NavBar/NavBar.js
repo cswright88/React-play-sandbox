@@ -111,13 +111,12 @@ export default function NavBar() {
     return (
         <div>
             <CssBaseline/>
-            < AppBar
+            <AppBar
                 position="absolute"
                 className={clsx(classes.appBar, open && classes.appBarShift)}>
-                <
-                    Toolbar
+                <Toolbar
                     className={classes.toolbar}>
-                    < IconButton
+                    <IconButton
                         edge="start"
                         color="inherit"
                         aria-label="open drawer"
@@ -128,9 +127,9 @@ export default function NavBar() {
                     <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                         Dashboard
                     </Typography>
-                    < IconButton
+                    <IconButton
                         color="inherit">
-                        < Badge
+                        <Badge
                             badgeContent={4}
                             color="secondary">
                             <NotificationsIcon/>
