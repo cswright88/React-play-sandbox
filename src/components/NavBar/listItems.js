@@ -6,17 +6,16 @@ import Link from "@material-ui/core/Link";
 import routes from '../../Routes';
 
 
-
 const getRoutes = routes.map((route) => (
     <div key={`routes-${route.key}-parent`}>
-        <ListItem button>
-            <ListItemIcon>
-                {route.icon}
-            </ListItemIcon>
-            <Link href={route.path} color='textPrimary'>
+        <Link href={route.path} color='textPrimary'>
+            <ListItem button>
+                <ListItemIcon>
+                    {route.icon}
+                </ListItemIcon>
                 <ListItemText primary={route.pageTitle}/>
-            </Link>
-        </ListItem>
+            </ListItem>
+        </Link>
     </div>
 ));
 
