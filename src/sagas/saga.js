@@ -23,9 +23,9 @@ function* getUsers() {
     }
 }
 
-function* getPokeomon(){
+function* getPokeomon(action){
     try {
-        const data = yield call(fetchPokemon);
+        const data = yield call(fetchPokemon, action);
         yield put({type: 'RECIEVE_API_DATA', data: data});
     } catch (e) {
         console.log(e);

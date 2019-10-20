@@ -23,9 +23,15 @@ export const AllUsers = () => {
     };
 };
 
-export const GetPokemon = () => {
+function validatePokemonNumber(num) {
+    num = parseInt(num);
+    return (num > 0 && typeof num == 'number') ? num : 0;
+}
+
+export const GetPokemon = (num = 0) => {
     return {
-        type: 'GET_POKEMON'
+        type: 'GET_POKEMON',
+        payload: validatePokemonNumber(num)
     };
 };
 
