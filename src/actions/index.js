@@ -23,6 +23,12 @@ export const AllUsers = () => {
     };
 };
 
+export const GetPokemon = () => {
+    return {
+        type: 'GET_POKEMON'
+    };
+};
+
 //API REQUEST Actions
 export const REQUEST_API_DATA = "REQUEST_API_DATA";
 export const RECIEVE_API_DATA = "RECIEVE_API_DATA";
